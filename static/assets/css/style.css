@@ -1,0 +1,87 @@
+
+/**
+Navbar
+**/
+.navbar{
+  margin-bottom: 5rem;
+}
+.bg-light {
+  background-color: #0060bfa1;
+}
+.navbar-light .navbar-brand {
+    color: rgba(255,255,255,.9);
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255, 255, 255,.9);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255,.8);
+}
+.h1, h1{
+  margin-left: 5%;
+}
+.h2, h2{
+  margin-left: 5%;
+  }
+.label-free {
+  display: inline-block;
+  padding-right: 6px;
+  padding-top: 5px;
+  position: relative;
+}
+.btn-orange {
+  background-color: #F70;
+  color: #FFF;
+  border-radius: 10px 5%;
+}
+.OLXad-insert-box {
+  float: right;
+  margin: -7px 342px 0;
+}
+
+.blog .carousel-indicators {
+	left: 0;
+	top: auto;
+  bottom: -40px;
+
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    background: #a3a3a3;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.blog .carousel-indicators .active {
+background: #707070;
+}
+
+.login-form{
+  width: 400px;
+  margin: 0 auto;
+
+}
+
+.login{
+  text-align-last: center;
+   margin: 0 auto;
+}
+
+.text-muted{
+  color: black;
+  text-align: end;
+}
+.th{
+  text-align: left;
+}
+#tabela.btn-group{
+  margin-top: -24px;
+  padding-left: 72px;
+}
+#tabela_setor{
+  margin-top: -24px;
+  column-count: auto;
+}
+

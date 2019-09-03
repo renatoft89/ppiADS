@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Seja Bem Vindo{% endblock %}
+
+{% block main %}
+
+    <h2 class="title-horizontal" object_name="home" orientation="horizontal">Anúncios recentes</h2>
+      <div class="container">
+            <div class="row blog">
+                <div class="col-md-12">
+                    <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#blogCarousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="{% static 'assets/img/red.jpg' %}" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="{% static 'assets/img/green.jpg' %}" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="{% static 'assets/img/black.jpg' %}" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="{% static 'assets/img/2.jpg' %}" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="{% static 'assets/img/red.jpg' %}" alt="Image" style="max-width:100%;">
+                                            <h2 class="info-title info-title-horizontal" orientation="horizontal">DVR - Intelbras</h3>
+                                            <div class="price price-horizontal" orientation="horizontal">R$ 250.000</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="{% static 'assets/img/green.jpg' %}" alt="Image" style="max-width:100%;">
+                                            <h2 class="info-title info-title-horizontal" orientation="horizontal">Camera - DVR</h3>
+                                            <div class="price price-horizontal" orientation="horizontal">R$ 25.00</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="{% static 'assets/img/2.jpg' %}" alt="Image" style="max-width:100%;">
+                                            <h2 class="info-title info-title-horizontal" orientation="horizontal">Camera - DVR</h3>
+                                            <div class="price price-horizontal" orientation="horizontal">R$ 35.00</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="{% static 'assets/img/black.jpg' %}" alt="Image" style="max-width:100%;">
+                                            <h2 class="info-title info-title-horizontal" orientation="horizontal">Motor - Portão</h3>
+                                            <div class="price price-horizontal" orientation="horizontal">R$ 755.00</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                        </div>
+                        <!--.carousel-inner-->
+                    </div>
+                    <!--.Carousel-->
+
+                </div>
+            </div>
+</div>
+
+
+
+{% endblock %}
+
+
+
+ {% block footer %}
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Mundo da Telcnologia</span>
+      </div>
+    </footer>
+{% endblock %}
