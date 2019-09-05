@@ -34,9 +34,12 @@ Navbar
   color: #FFF;
   border-radius: 10px 5%;
 }
+
 .OLXad-insert-box {
   float: right;
   margin: -7px 342px 0;
+}
+
 }
 
 .blog .carousel-indicators {
@@ -84,4 +87,6 @@ background: #707070;
   margin-top: -24px;
   column-count: auto;
 }
-
+.card-body {
+  background: rgb(155, 181, 221);
+}
