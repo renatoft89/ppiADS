@@ -13,6 +13,10 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 import django_heroku
 
+from decouple import config
+from dj_database_url import parse as dburl
+from django.conf.urls.static import static
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -24,7 +28,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '@mi8$a)c$5hu@nfm^m**kcztx30mj(ne7*c(nx5dse)$l0(p3r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ['179.234.73.191', 'app-mundotec.herokuapp.com', '127.0.0.1', 'localhost', '172.17.0.100','172.17.0.200']
 
@@ -82,10 +86,25 @@ WSGI_APPLICATION = 'gestao_app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
+# Database
+# https://docs.djangoproject.com/en/2.1/ref/settings/#databases
+
+default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'dbold.sqlite3')
+
+DATABASES = { 'default': config('DATABASE_URL', default=default_dburl, cast=dburl), }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django',
+        'USER': 'renatoft89',
+        'PASSWORD': '22052015',
+        'HOST': '172.17.0.200',
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
+        
     }
 }
 
