@@ -27,7 +27,7 @@ function global:deactivate ([switch]$NonDestructive) {
 
 deactivate -nondestructive
 
-$env:VIRTUAL_ENV="C:\Users\Renato\OneDrive - Academico - Secretaria do Estado da Educação de São Paulo\Django Projetos\venvMT"
+$env:VIRTUAL_ENV="C:\Users\Renato\OneDrive - Academico - Secretaria do Estado da Educação de São Paulo\Django Projetos\projetoFaao\venvFaao"
 
 if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     # Set the prompt to include the env name
@@ -35,7 +35,7 @@ if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     function global:_OLD_VIRTUAL_PROMPT {""}
     copy-item function:prompt function:_OLD_VIRTUAL_PROMPT
     function global:prompt {
-        Write-Host -NoNewline -ForegroundColor Green '(venvMT) '
+        Write-Host -NoNewline -ForegroundColor Green '(venvFaao) '
         _OLD_VIRTUAL_PROMPT
     }
 }

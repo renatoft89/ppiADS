@@ -6,7 +6,7 @@ Navbar
   margin-bottom: 5rem;
 }
 .bg-light {
-  background-color: #0060bfa1;
+  background-color: #247cd4;
 }
 .navbar-light .navbar-brand {
     color: rgba(255,255,255,.9);
@@ -22,7 +22,7 @@ Navbar
 }
 .h2, h2{
   margin-left: 5%;
-  }
+}
 .label-free {
   display: inline-block;
   padding-right: 6px;
@@ -74,7 +74,7 @@ background: #707070;
 
 .text-muted{
   color: black;
-  text-align: end;
+  text-align: start;
 }
 .th{
   text-align: left;
@@ -88,5 +88,61 @@ background: #707070;
   column-count: auto;
 }
 .card-body {
-  background: rgb(155, 181, 221);
+  background: #f8f9fa;
+}
+
+.iza-top {
+  margin-top: -80px;
+  padding-top: 4px;
+  margin-bottom: 48px;
+  padding-bottom: 59px;
+  background-color: #0b40b812;
+
+}
+#search-input{
+  width: 100%;
+  height: 61px;
+  display: block;
+  padding: 16px 24px;
+  border-radius: 4px;
+  border: none;
+  font-family: Nunito Sans,Helvetica Neue,HelveticaNeue,Helvetica,"sans-serif";
+  font-size: 20px;
+  outline: none;
+  color: #4a4a4a;
+}
+.searchBox .submitBtn {
+  float: right;
+  -o-object-fit: contain;
+  object-fit: contain;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.searchBox {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 60px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: .5px solid #d2d2d2;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.searchBox .submitBtn svg {
+  width: 20px;
+  height: 20px;
+  color: #247cd4;
+}
+
+.separator {
+  width: 1px;
+  height: 60px;
+  border: .5px solid #d2d2d2;
 }

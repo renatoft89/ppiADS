@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set "VIRTUAL_ENV=C:\Users\Renato\OneDrive - Academico - Secretaria do Estado da Educação de São Paulo\Django Projetos\venvMT"
+set "VIRTUAL_ENV=C:\Users\Renato\OneDrive - Academico - Secretaria do Estado da Educação de São Paulo\Django Projetos\projetoFaao\venvFaao"
 
 if not defined PROMPT (
     set "PROMPT=$P$G"
@@ -23,7 +23,7 @@ if defined _OLD_VIRTUAL_PYTHONHOME (
 )
 
 set "_OLD_VIRTUAL_PROMPT=%PROMPT%"
-set "PROMPT=(venvMT) %PROMPT%"
+set "PROMPT=(venvFaao) %PROMPT%"
 
 if defined PYTHONHOME (
     set "_OLD_VIRTUAL_PYTHONHOME=%PYTHONHOME%"

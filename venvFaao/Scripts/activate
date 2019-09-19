@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Renato\OneDrive - Academico - Secretaria do Estado da Educação de São Paulo\Django Projetos\venvMT"
+VIRTUAL_ENV="C:\Users\Renato\OneDrive - Academico - Secretaria do Estado da Educação de São Paulo\Django Projetos\projetoFaao\venvFaao"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
@@ -54,8 +54,8 @@ fi
 
 if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then
     _OLD_VIRTUAL_PS1="${PS1:-}"
-    if [ "x(venvMT) " != x ] ; then
-	PS1="(venvMT) ${PS1:-}"
+    if [ "x(venvFaao) " != x ] ; then
+	PS1="(venvFaao) ${PS1:-}"
     else
     if [ "`basename \"$VIRTUAL_ENV\"`" = "__" ] ; then
         # special case for Aspen magic directories

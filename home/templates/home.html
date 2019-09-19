@@ -4,16 +4,43 @@
 {% block title %}Seja Bem Vindo{% endblock %}
 
 {% block main %}
-
-<div class="input-group col-md-6">
-      <input class="form-control py-2" type="search" value="search" id="search-input">
-      <span class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button">
-            <i class="fa fa-search"></i>
-        </button>
-      </span>
+<div class="iza-top">
+    <div class="iza-container container">
+        <div class="container mt-5 mb-4">
+            <div class="row">
+                <div class="col-12 px-md-4">
+                    <ul class="list-unstyled mb-0 list-inline category-stripe pb-3">
+                    </ul>
+                    <form class="searchBox " novalidate role="search">
+                        <input class="form-control py-2" type="search" value="search" id="search-input">
+                        <span class="separator"> </span>
+                        <button class="submitBtn" type="button">                    
+                            <i class="fa fa-search"></i>
+                        </button>                        
+                </div>
+                <div class="col-12 px-0 px-md-4">
+                <li class="list-inline-item">
+                    <a href="#">
+                        <span class="icon-background">
+                            <img class="rounded-circle" src="{% static 'assets/img/security.png' %}" style="width: 52px; height: 52px;">
+                        </span>
+                        <small>Segurança</small>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        <span class="icon-background">
+                            <img class="rounded-circle" src="{% static 'assets/img/informatica.png' %}" style="width: 52px; height: 52px;">
+                        </span>
+                        <small>Informatica</small>
+                    </a>
+                </li>
+                </div>
+            </form>
+            </div>   
+        </div>  
+    </div>
 </div>
-
     <h2 class="title-horizontal" object_name="home" orientation="horizontal">Anúncios recentes</h2>
       <div class="container">
             <div class="row blog">
@@ -30,22 +57,27 @@
 
                             <div class="carousel-item active">
                                 <div class="row">
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
                                         <a href="#">
                                             <img src="{% static 'assets/img/red.jpg' %}" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
                                         <a href="#">
                                             <img src="{% static 'assets/img/green.jpg' %}" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
                                         <a href="#">
                                             <img src="{% static 'assets/img/black.jpg' %}" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
+                                        <a href="#">
+                                            <img src="{% static 'assets/img/2.jpg' %}" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2">
                                         <a href="#">
                                             <img src="{% static 'assets/img/2.jpg' %}" alt="Image" style="max-width:100%;">
                                         </a>
@@ -101,12 +133,10 @@
 
 {% endblock %}
 
-
-
 {% block footer %}
-    <footer class="footer">
-      <div class="container">
-        <span class="text-muted">Mundo da Telcnologia</span>
-      </div>
-    </footer>
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">© Copyright 2019 Mundo da Tecnologia ADS-3ºAno</span>
+    </div>
+  </footer>
 {% endblock %}

@@ -3,13 +3,36 @@
 {% block title %}Crie sua conta{% endblock %}
 
 {% block main %}
-	<div class="container">
-		<h1>Crie sua conta</h1>
-		<form action="." method="post">
-			{% csrf_token %}
-			{{ form.as_p }}
-			<input class="btn btn-primary" type="submit" value="Registrar">
-		</form>
-	</div>
+<div class="container">
+		<div class="row">
+		  <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+			<div class="card card-signin my-5">
+			  <div class="card-body">		
+				<form action="." method="POST">
+					{% csrf_token %}
+					<fieldset class="form-group">
+						<legend class="border-buttom mb-4" class="ion-text-justify">Registrar</legend>
+						{{ form|crispy }}
+					</fieldset>
+					<div class="form-group">
+						<button class="btn btn-outline-info" type="submit">Registrar</button>
+					</div>
+				</form>
+			<div class="border-top pt-3">
+			<small class="text-muted">
+				Já tem uma conta? <a class="ml-2" href="{%url 'login'%}">Login</a>
+			</small>
+		  </div>
+		 </div>
+		</div>
+	  </div>
+	 </div> 
+	 
 {% endblock %}
-
+{% block footer %}
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">© Copyright 2019 Mundo da Tecnologia ADS-3ºAno</span>
+    </div>
+  </footer>
+{% endblock %}

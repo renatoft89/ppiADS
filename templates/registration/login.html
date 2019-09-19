@@ -25,9 +25,9 @@
 
               <div class="custom-control custom-checkbox mb-3">
                 <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Remember password</label>
+                <label class="custom-control-label" for="customCheck1">Lembrar Senha</label>
               </div>
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Login</button>
               <div class="sc-bAeIUo cldXdv sc-EHOje hDmdra">
                 <span font-weight="400" tag="span" color="dark" weight="" class="sc-GMQeP VlXvH">Não tem uma conta?</span>
                 <a href="{% url 'account:registrar' %}" class="sc-iujRgT tfcCq">Cadastre-se</a>
@@ -40,5 +40,11 @@
   </div>
 
 
-
+{% endblock %}
+{% block footer %}
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">© Copyright 2019 Mundo da Tecnologia ADS-3ºAno</span>
+    </div>
+  </footer>
 {% endblock %}

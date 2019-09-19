@@ -1,4 +1,4 @@
-#!c:\users\renato\onedrive - academico - secretaria do estado da educação de são paulo\django projetos\venvmt\scripts\python.exe
+#!c:\users\renato\onedrive - academico - secretaria do estado da educação de são paulo\django projetos\projetofaao\venvfaao\scripts\python.exe
 from django.core import management
 
 if __name__ == "__main__":

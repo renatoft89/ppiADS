@@ -23,41 +23,37 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav">
+            <div class="navbar-nav md-2">
                 <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
                 <a href="#" class="nav-item nav-link">Empresas</a>
                 <a href="#" class="nav-item nav-link">Anúncios</a>
-
-                <div class="OLXad-insert-box"></div>
-                <span class="label-free">
-                  <a class="btn btn-large btn-orange" lurker="ad_insertion" href="#" title="Inserir anúncio">Anunciar</a>
-                  </a>
-                </span>
             </div>
-            <ul class="navbar-nav align-items-center ml-auto">
-        <li class="nav-item dropdown" >
+            <ul class="navbar-nav align-items-right ml-auto">
+            <a class="btn btn-large btn-orange" lurker="ad_insertion" href="#" title="Inserir anúncio">Anunciar</a>
+                  
+            <li class="nav-item dropdown" >
             {% if user.is_authenticated %}
             <a class="nav-link pr-0" id="navbarDropdownUser" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Olá {{ user.username }}
+                Olá  {{ user.username }}
                 <img class="rounded-circle" src="{% static 'assets/img/renato.png' %}" alt="" width="35px" height="35px">
             {% else %}
                 <li class="nav-item"><a class="nav-link" href="{% url 'login' %}" lurker="my_account"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg><span class="ml-2">Minha conta</span></a></li>
             {% endif %}
             </a>
-        <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="navbarDropdownUser">
-            <div class="bg-white rounded-soft py-2">
-              {% if user.is_authenticated %}
-                <a class="dropdown-item" href="{% url 'logout' %}">Sair</a>
-              {% else %}
-                <a class="dropdown-item" href="{% url 'login' %}">Entrar</a>
-              {% endif %}
-            </div>
+            <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="navbarDropdownUser">
+            
+            {% if user.is_authenticated %}
+              <a class="dropdown-item" href="{% url 'logout' %}">Sair</a>
+            {% else %}
+              <a class="dropdown-item" href="{% url 'login' %}">Entrar</a>
+            {% endif %}
+            
           </div>
         </li>
       </ul>
     </div>
-  </nav>
-
+  </div> 
+   </nav>
         {% block main %}
         {% endblock %}
         
@@ -69,10 +65,13 @@
   <script defer src="{% static 'assets/js/solid.js' %}"></script>
   <script defer src="{% static 'assets/js/fontawesome.js' %}"></script>
     
-{% block footer %}
-{% endblock %}
-
-
+  {% block footer %}
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">© Copyright 2019 Mundo da Tecnologia ADS-3ºAno</span>
+    </div>
+  </footer>
+  {% endblock %}
 
 </body>
 </html>
