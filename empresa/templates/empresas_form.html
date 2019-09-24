@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}Crie sua conta{% endblock %}
+
+{% block main %}
+
+	<div class="container">
+        <h1 align="center">Fazer Anúncio</h1>
+        <div>
+            <form action="." method="POST">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <input type="submit" class="btn btn-default" value="Criar">
+            </form>
+            
+        </div>
+    </div>
+	 
+{% endblock %}
+{% block footer %}
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">© Copyright 2019 Mundo da Tecnologia ADS-3ºAno</span>
+    </div>
+  </footer>
+{% endblock %}

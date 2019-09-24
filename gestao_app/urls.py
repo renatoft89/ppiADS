@@ -19,12 +19,16 @@ from django.urls import path, include
 
 
 from home import urls as home_urls
+from empresa import urls as empresa_urls
 from account import urls as login_urls
 
 urlpatterns = [
     
-    path('', include(home_urls)), 
+    path('', include(home_urls)),
+    path('empresa/', include(empresa_urls)), 
     path('admin/', admin.site.urls),
+
+
     
     path('accounts/', include('django.contrib.auth.urls')),
 

@@ -28,7 +28,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '@mi8$a)c$5hu@nfm^m**kcztx30mj(ne7*c(nx5dse)$l0(p3r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = True
 
 ALLOWED_HOSTS = ['179.234.73.191', 'app-mundotec.herokuapp.com', '127.0.0.1', 'localhost', '172.17.0.100','172.17.0.200']
 
@@ -43,7 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    'anuncios',
     'empresa',
+    'localflavor',
     'account.apps.AccountConfig',
     
 
@@ -96,11 +98,11 @@ DATABASES = { 'default': config('DATABASE_URL', default=default_dburl, cast=dbur
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django',
-        'USER': 'renatoft89',
-        'PASSWORD': '22052015',
-        'HOST': '172.17.0.200',
-        'PORT': '3306',
+        'NAME': 'faao',
+        'USER': 'root',
+        'PASSWORD': 'usbw',
+        'HOST': '127.0.0.1',
+        'PORT': '3307',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
         }
