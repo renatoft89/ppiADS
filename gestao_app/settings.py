@@ -30,7 +30,7 @@ SECRET_KEY = '@mi8$a)c$5hu@nfm^m**kcztx30mj(ne7*c(nx5dse)$l0(p3r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['179.234.73.191', 'app-mundotec.herokuapp.com', '127.0.0.1', 'localhost', '172.17.0.100','172.17.0.200']
+ALLOWED_HOSTS = ['179.234.73.191', 'app-mundotec.herokuapp.com', '127.0.0.1', '172.17.0.100','172.17.0.200']
 
 
 # Application definition
@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home',
     'anuncios',
-    'empresa',
+    'produtos',
     'localflavor',
     'account.apps.AccountConfig',
     
@@ -156,6 +156,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
     'static',
 ]
+
+MEDIA_URL = '/static/assets/media/'
+
+MEDIA_ROOT = 'media'
 
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'home'

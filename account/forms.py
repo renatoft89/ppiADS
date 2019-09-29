@@ -12,4 +12,4 @@ class UserRegisterForm(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ['razao_social', 'cnpj_cpf','endereco', 'cidade', 'username', 'telefone', 'email', 'password1', 'password2']
+        fields = ['razao_social', 'cnpj_cpf','endereco', 'cidade', 'username', 'telefone', 'email', 'password1', 'password2', ]

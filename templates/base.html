@@ -16,7 +16,7 @@
     <div class="bs-example">
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <a href="#" class="navbar-brand">
-            <img src="{% static 'assets/img/tec.png' %}" height="75" alt="CoolBrand">
+            <img src="{% static 'assets/img/tec.png' %}" height="85" alt="CoolBrand">
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -29,7 +29,7 @@
                 <a href="#" class="nav-item nav-link">Anúncios</a>
             </div>
             <ul class="navbar-nav align-items-right ml-auto">
-            <a class="btn btn-large btn-orange" lurker="ad_insertion" href="{% url 'empresas_new' %}" title="Inserir anúncio">Anunciar</a>
+            <a class="btn btn-large btn-orange" lurker="ad_insertion" href="{% url 'anuncios_new' %}" title="Inserir anúncio">Anunciar</a>
                   
             <li class="nav-item dropdown" >
             {% if user.is_authenticated %}

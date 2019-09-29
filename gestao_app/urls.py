@@ -19,13 +19,15 @@ from django.urls import path, include
 
 
 from home import urls as home_urls
-from empresa import urls as empresa_urls
+from anuncios import urls as anuncios_urls
 from account import urls as login_urls
+from produtos import urls as produtos_urls
 
 urlpatterns = [
     
     path('', include(home_urls)),
-    path('empresa/', include(empresa_urls)), 
+    path('anuncios/', include(anuncios_urls)),
+    path('produtos/', include(produtos_urls)), 
     path('admin/', admin.site.urls),
 
 

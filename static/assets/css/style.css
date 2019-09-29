@@ -33,7 +33,9 @@ Navbar
   background-color: #F70;
   color: #FFF;
   border-radius: 10px 5%;
+  margin-top: 6px;
 }
+
 
 .OLXad-insert-box {
   float: right;
